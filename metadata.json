@@ -1,0 +1,6 @@
+{
+  "name": "Kanz Bakery",
+  "description": "Artisanal bakery application with menu browsing, item rating, item customization, shopping cart, catering & bulk ordering, and full English and Arabic RTL support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

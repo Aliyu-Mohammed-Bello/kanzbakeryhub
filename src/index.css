@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #FFFDF9;
+  --color-brand-surface: #FDFBF7;
+  --color-brand-muted-bg: #F5F1E9;
+  --color-brand-border: #E0D7C6;
+  --color-brand-primary: #8B4513;
+  --color-brand-primary-hover: #5D4037;
+  --color-brand-text: #3E2723;
+  --color-brand-subtext: #5D4037;
+  --color-brand-label: #A0816C;
+  --color-brand-secondary-text: #7D6B5D;
+  --color-brand-gold: #D4AF37;
+
+  --color-amber-50: #FFFDF9;
+  --color-amber-100: #F5F1E9;
+  --color-amber-200: #E0D7C6;
+  --color-amber-300: #D0C3B0;
+  --color-amber-400: #D4AF37;
+  --color-amber-500: #C29B27;
+  --color-amber-600: #A0816C;
+  --color-amber-700: #8B4513;
+  --color-amber-800: #5D4037;
+  --color-amber-900: #3E2723;
+  --color-amber-950: #271714;
+
+  --color-stone-50: #FFFDF9;
+  --color-stone-100: #FDFBF7;
+  --color-stone-200: #E0D7C6;
+  --color-stone-300: #D0C3B0;
+  --color-stone-400: #A0816C;
+  --color-stone-500: #7D6B5D;
+  --color-stone-600: #6D5648;
+  --color-stone-700: #5D4037;
+  --color-stone-800: #3E2723;
+  --color-stone-900: #271714;
+  --color-stone-950: #1B0F0D;
+}
+
+@layer base {
+  :root {
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-arabic: 'Cairo', 'Tajawal', system-ui, sans-serif;
+  }
+
+  body {
+    background-color: #FFFDF9;
+    color: #3E2723;
+  }
+
+  [dir="rtl"] {
+    font-family: 'Cairo', 'Tajawal', 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+
+  [dir="ltr"] {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.font-serif-custom {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-arabic-title {
+  font-family: 'Tajawal', 'Cairo', sans-serif;
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fdfbf7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e0d7c6;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a0816c;
+}
+
+/* RTL Helpers */
+[dir="rtl"] .ltr-only {
+  display: none !important;
+}
+
+[dir="ltr"] .rtl-only {
+  display: none !important;
+}
+
+
